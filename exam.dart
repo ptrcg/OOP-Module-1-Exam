@@ -66,6 +66,7 @@ void main() {
   //This section exhibits Abstraction because it only focuses on a specific gun and a specific set of
   //Commands and/or actions. The user isnt interested on how to print or how to use the scope. He/She
   //Just wants to be able to use the scope and shoot the gun. Therefore, only specific statements will be printed out.
+  Operator op  = Operator();
   op.useScope();
   op.shootGun();
   print("----------------------");
@@ -76,4 +77,8 @@ void main() {
   Vandal vn = Vandal();
   vn.useScope();
   vn.shootGun();
+  print("----------------------");
+  Classic cs = Classic();
+  cs.useScope();
+  cs.shootGun();
 }
